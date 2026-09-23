@@ -1,0 +1,35 @@
+# Análisis de Ensayo a Compresión de Hormigón
+
+## Propósito
+Documentar y procesar los datos de un ensayo a compresión de una probeta de hormigón para determinar su resistencia máxima (fmax) y analizar su comportamiento esfuerzo-desplazamiento. Este proyecto fue reorganizado a partir de datos heredados de un integrante anterior para asegurar su reproducibilidad.
+
+## Unidades y Supuestos
+Para los cálculos de la sección transversal y los esfuerzos, se asumió una geometría de probeta cilíndrica estándar con las siguientes dimensiones registradas originalmente:
+*   **Diámetro (D):** 150 mm
+*   **Altura (H):** 300 mm
+Las unidades de medida utilizadas en el análisis son:
+*   Carga (P): kN
+*   Desplazamiento (u): mm
+*   Esfuerzo (\sigma): MPa
+
+## Entradas
+*   Datos brutos obtenidos de la máquina de ensayo correspondientes a la carga (P) y el desplazamiento (u). 
+*   *Nota:* Se descartaron versiones ambiguas y se consolidó la información en un único archivo de análisis.
+
+## Procedimiento
+1.  Se estructuraron los datos crudos en la planilla de cálculo.
+2.  Se verificaron y declararon las unidades de medida en los encabezados.
+3.  Se calculó el esfuerzo (\sigma) para cada punto de carga.
+4.  Se identificó la resistencia máxima (fmax) alcanzada durante el ensayo.
+5.  Se trazó la curva Esfuerzo vs. Desplazamiento.
+
+## Salidas
+*   `02_Analisis/analisis_hormigon.xlsx`: Planilla depurada con los cálculos de esfuerzo y la obtención del fmax.
+*   `03_Resultados/grafico_final.png`: Gráfico representativo exportado de la curva Esfuerzo-Desplazamiento.
+
+## Herramientas Utilizadas
+*   Microsoft Excel (procesamiento de datos experimentales y graficación).
+*   GitHub (control de versiones y trazabilidad de cambios).
+
+## Limitaciones
+Al ser un proyecto heredado con información inicial fragmentada, no se cuenta con el registro de las condiciones de curado de la probeta ni con la fecha exacta de ejecución del ensayo en laboratorio. El análisis se limita al procesamiento numérico de la tabla de datos entregada.
